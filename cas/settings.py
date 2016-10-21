@@ -28,6 +28,7 @@ MIDDLEWARE = [
 
 LOGGING = {
     'version': 1,
+    'disable_existing_loggers': False,
     'handlers': {
         'console': {
             'level': 'DEBUG',
@@ -39,12 +40,10 @@ LOGGING = {
             'handlers': ['console']
         },
         'cas': {
-            'handlers': ['console'],
-            'propagate': True,
+            'handlers': ['console']
         },
         'auth': {
-            'handlers': ['console'],
-            'propagate': True,
+            'handlers': ['console']
         },
     },
 }
